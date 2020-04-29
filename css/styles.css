@@ -473,6 +473,11 @@ footer {
   background-size: auto;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 835px) {
+  .proba {
+    opacity: 0.5;
+  }
+}
 .proba {
   opacity: 0.7;
 }

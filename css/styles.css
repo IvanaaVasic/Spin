@@ -247,7 +247,7 @@ nav a:focus {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: pink;
 }
 
 .dropdown:hover .dropdown-content {

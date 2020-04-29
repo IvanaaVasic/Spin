@@ -208,9 +208,65 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: #ddd;
+  color: pink;
+}
+.dropbtn {
+  background-size: cover;
+  background-color: pink;
+  background-image: url(../img/lines.png);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  height: 50px;
+  width: 50px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  bottom: 80px;
+  left: 80px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 1px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: pink;
+}
+@media only screen and (min-width: 835px) {
+  .dropdown {
+    display: none;
+  }
+}
+@media only screen and (max-width: 835px) {
+  nav {
+    display: none;
+  }
+}
 @media (min-width: 60rem) {
   .logo {
     float: left;
@@ -377,16 +433,17 @@ footer {
   padding: 5em 0;
 }
 .image-style {
-  height: 282px;
-  width: 420px;
+  height: 250px;
+  width: 320px;
   background-position: center;
   background-size: cover;
   margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .name {
   font-family: "Raleway", sans-serif;
-  padding-top: 46%;
+  padding-top: 40%;
   font-weight: bold;
   font-size: 30px;
   opacity: 1;
@@ -409,6 +466,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   background-size: auto;
+  flex-wrap: wrap;
 }
 .proba {
   opacity: 0.7;

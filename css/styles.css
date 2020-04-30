@@ -14,6 +14,8 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  position: relative;
+  left: 15px;
 }
 
 .container {
@@ -212,7 +214,7 @@ nav a:focus {
 }
 .dropbtn {
   background-size: cover;
-  background-color: pink;
+
   background-image: url(../img/lines.png);
   color: white;
   padding: 16px;
@@ -226,7 +228,7 @@ nav a:focus {
   position: relative;
   display: inline-block;
   bottom: 80px;
-  left: 80px;
+  left: 75px;
 }
 
 .dropdown-content {
@@ -255,7 +257,7 @@ nav a:focus {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: pink;
+  background-color: transparent;
 }
 @media only screen and (min-width: 835px) {
   .dropdown {

@@ -272,6 +272,10 @@ nav a:focus {
 @media (min-width: 60rem) {
   .logo {
     float: left;
+    transition: transform 0.2s;
+  }
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   nav {
@@ -447,6 +451,10 @@ footer {
   margin-right: 10px;
   margin-bottom: 10px;
   text-align: center;
+  transition: transform 0.2s;
+}
+.image-style:hover {
+  transform: scale(1.1);
 }
 .name {
   font-family: "Raleway", sans-serif;
